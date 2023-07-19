@@ -1,0 +1,324 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navber{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px 200px;
+}
+.head-logo-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heading-title{
+    color: #0B0223;
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.G{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;        
+}
+.head-list{
+    display: flex;
+    align-items: center; 
+    list-style: none;
+    gap: 12px;
+    font-size: 1.25rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+    padding: 3px 10px;
+    gap: 8px;                                           
+}
+
+/* this is section-1 .. */
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 100px;
+    margin: 0 auto;
+    /* padding: 3rem 12.5rem;
+    width: 100%; */
+}
+.play{
+    color: #0B0223;
+    /* text-align: center; */
+    font-family: Work Sans;
+    font-size: 2.5rem;
+}
+ .goat{
+    font-size: 3rem;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 0;
+    margin-top: 0;
+ }
+    
+.banner-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+}
+.banner-description{
+    text-align: center;
+}
+.banner-photo img{
+    width: 100%;
+}
+.btn-primary{
+    padding: 1rem 2rem;
+    border-radius: 2.8rem;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    cursor: pointer;
+    
+}
+.btn-secondary{
+    padding: 1rem 2rem;
+    border-radius: 2.8rem;
+    background-color: #4EC5F7;
+    border: none;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background: #d81389;
+    color: #FFF;
+}
+.btn-secondary:hover{
+    background: #1995ca;
+    color: #FFF;
+}
+/* this is section 2..  */
+.online-description{
+    width: 500px;
+    margin: 0 auto;
+}
+.online-heading{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.online-para{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* position: absolute; */
+}
+.box-1{
+    width: 400px;
+    height: 500px;
+    /* position: absolute; */
+}
+.box-1 img{
+    width: 100%;
+}
+.box-para{
+    text-align: center;
+}
+/* this is section-3 */
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.feature-content{
+    width: 300px;
+}
+.png img{
+    width: 90%;
+    margin-left: 100px;
+}
+.position{
+    width: 300px;
+    position: relative;
+    bottom: 200px;
+    margin: 0px;
+}
+/* this is section-4.. */
+section{
+    width: auto;
+ }
+ .features{
+     margin-top: 50px;
+ }
+ .play-games{
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     justify-content: space-evenly;
+     align-items: center;
+     /* gap: 16px; */
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+ .squere{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 150px;
+     height: 50px;
+ }
+ .squere:hover{
+     background: #e9b6b6;
+     border-radius: 40px;
+     border: #927777;
+ }
+ .squere img{
+    width: 30%;
+ }
+ /* this is footer..  */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B0223;
+    margin-top: 20px;
+    padding: 20px;
+    color: #FFF;
+}
+.footer-list li{
+    padding: 15px;
+}
+.footer-title{
+    width: 100%;
+}
+.footer-para{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 10px;
+    text-align: center;
+}
+.footer-icon img{
+    padding: 20px;
+}
+
+/* responsive sight  */
+@media screen and (max-width: 576px) {
+    /* this is header */
+    header{
+        padding: 20px;
+    }
+    .navber{
+        flex-direction: column;
+        text-align: center;
+        /* padding: auto;
+        margin: auto; */
+    }
+    .head-list{
+        flex-direction: column;
+    }
+    .heading-title{
+        margin: 0 auto;
+    }
+    /* this is section-1  */
+    main{
+        padding: 20px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    /* .banner-photo {
+        width: auto;
+    } */
+    /* this is section-2..  */
+    .online-description{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-1 img{
+        width: 90%;
+    }
+    /* this is section-3..  */
+    .features{
+        flex-direction: column;
+    }
+    .feature-content{
+        width: 200px;
+        text-align: center;
+    }
+    .png img{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .position img{
+        position: static;
+        width: 60%;
+    }
+    /* this is section-4.. */
+    .section-4{
+        padding: 0px;
+    }
+    .play-games{
+       grid-template-columns: repeat(3, 1fr);
+    }
+    .squere{
+        width: 100%;
+        margin: 0 auto;
+        gap: 4px;
+    }
+    
+    /* footer section.. */
+    footer{
+        padding: 20px;
+        width: 100%;
+    }
+    .footer-title{
+        width: 90%;
+    }
+}
+/* medium/tablet devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+     header{
+        padding: 50px;
+     }
+    .navber{
+        flex-direction: column;
+    }
+    /* this is main part..  */
+    .main{
+        padding: 50px;
+    }
+    /* this is section-1..  */
+    .banner-container{
+        flex-direction: column;
+    }
+    .banner-photo {
+        width: auto;
+    }
+    /* this is section-2 .. */
+    .online-description{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-1 img{
+        width: 90%;
+    }
+}
